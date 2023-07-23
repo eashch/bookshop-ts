@@ -1,0 +1,70 @@
+@import 'style.scss';
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-text-gray;
+}
+
+.text-highlight {
+    color: $color-text-black;
+    text-transform: uppercase;
+}
+
+.text-description {
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text-gray;
+    font-size: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.body {
+    background-color: $color-text-white;
+}
+
+.button {
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.button_with-text {
+    width: 176px;
+    height: 45px;
+    color: $color-button;
+    border: 1px solid $color-button;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    appearance: none;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1400px) {
+    .button_with-text {
+        width: 88px;
+        height: 23px;
+    }
+}
+
+.button_with-text_disabled {
+    color: #5C6A79;
+    border: 1px solid #EEEDF5;
+}
+
+.link:hover {
+    cursor: pointer;
+}

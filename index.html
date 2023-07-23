@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Bookshop</title>
+    </head>
+    <body class="body text">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Bookshop</h1>
+                <nav class="navigation">
+                    <ul>
+                        <li class="navigation__li-item">
+                            <a class="navigation__link navigation__link_active">Books</a>
+                        </li>
+                        <li class="navigation__li-item">
+                            <a class="navigation__link">Audiobooks</a>
+                        </li>
+                        <li class="navigation__li-item">
+                            <a class="navigation__link">Stationery & gifts</a>
+                        </li>
+                        <li class="navigation__li-item">
+                            <a class="navigation__link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <button class="button header-buttons__button header-buttons__button_menu-mobile">
+                        <img class="header-buttons__icon_menu-mobile" width="12" height="15" alt="Menu icon">
+                    </button>
+                    <button class="button header-buttons__button">
+                        <img class="header-buttons__icon_user" width="12" height="15" alt="User profile icon">
+                    </button>
+                    <button class="button header-buttons__button">
+                        <img class="header-buttons__icon_search" width="15" height="14.71" alt="Search icon">
+                    </button>
+                    <button class="button header-buttons__button shopping-cart">
+                        <img class="header-buttons__shopping-cart" width="13.68" height="17" alt="Shopping bag icon">
+                        <div class="shopping-cart__wrapper">
+                            <div class="books-counter">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="slider-container">
+                <div class="slider">
+                    <img class="slider__image" width="1120" height="702">
+                    <div class="slider__switcher">
+                    </div>
+                </div>
+                <div class="sticker__old-book-exchange">
+                    <a class="link text-highlight">
+                        Change<br>old book<br>on new<br>
+                        <img class="sticker__arrow" width="55" height="12" alt="Arrow points right">
+                    </a>
+                </div>
+                <div class="sticker__top-books-2022">
+                    <a class="link text-highlight">
+                        Top<br>100<br>books<br>2022<br>
+                        <img class="sticker__arrow" width="55" height="12" alt="Arrow points right">
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-menu">
+                </div>
+                <button class="button content-menu__button-open-mobile">
+                    <img class="content-menu__icon_open-book" width="40px" height="40px" alt="Open book">
+                </button>
+                <div class="content-container">
+                    <div class="books-container">
+                    </div>
+                    <button class="text button_with-text content__button-load-more">
+                        Load more
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+    </body>
+    
+</html>

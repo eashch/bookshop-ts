@@ -1,0 +1,124 @@
+@import 'style.scss';
+
+.book {
+    width: 424px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 36px;
+    align-self: unset;
+    margin-left: 0;
+}
+
+@media (max-width: 1400px) {
+    .book {
+        width: 300px;
+        height: 200px;
+        align-self: center;
+        margin-left: 10px;
+    }
+}
+
+.book__image {
+    width: 212px;
+    height: 300px;
+    box-shadow: 0px 24px 36px 0px rgba(53, 49, 84, 0.28);
+}
+
+@media (max-width: 1400px) {
+    .book__image {
+        width: 106px;
+        height: 150px;
+    }
+}
+
+.book-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 53px;
+}
+
+.book-description__author {
+    white-space: nowrap;
+}
+
+@media (max-width: 1400px) {
+    .book-description {
+        margin-top: 5px;
+    }
+}
+
+.book-description__title {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4px;
+    width: 176px;
+    max-height: 57px;
+}
+
+@media (max-width: 1400px) {
+    .book-description__title {
+        width: 130px;
+        font-size: 12px;
+        max-height: 30px;
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.rating__stars {
+    width: 60px;
+    height: 12px;
+    background-color: #EEEDF5;
+    mask-image: url(./images/rating__stars.svg);
+    position: relative;
+}
+
+.rating__stars_rating {
+    width: 60px;
+    height: 12px;
+    background-color: #F2C94C;
+    mask-image: url(./images/rating__stars.svg);
+    position: absolute;
+    z-index: 10;
+}
+
+.book-description__description {
+    margin-top: 16px;
+    max-height: 40px;
+    width: 176px;
+}
+
+@media (max-width: 1400px) {
+    .book-description__description {
+        width: 130px;
+    }
+}
+
+.book-description__price {
+    margin-top: 16px;
+    color: $color-text-black;
+    font-weight: 700;
+}
+
+.book-description__button-buy {
+    margin-top: 16px;
+}
+
+.book-description__button-buy_in-cart {
+    color: $color-text-gray;
+    border: 1px solid #EEEDF5;
+}
+
+.ellipsis {
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
